@@ -104,3 +104,29 @@ $(".modal-body").on("click", function(event) {
 /*
 = END JS mail modal =
 */
+
+/* Радио плеер */
+
+const radio = document.getElementById('audio');
+const btnPlay = document.getElementById('btnPlay');
+const btnStop = document.getElementById('btnStop');
+
+
+if(radio || btnPlay || btnPause){
+    btnPlay.addEventListener('click', function(event){
+            radio.src = "http://air.volna.top/Karl";
+            radio.play();
+
+            btnPlay.classList.remove('active');
+            btnStop.classList.add('active');
+    });
+
+    btnStop.addEventListener('click', function(event){
+            radio.pause();
+            radio.currentTime = 0;
+            radio.src = "";
+
+            btnStop.classList.remove('active');
+            btnPlay.classList.add('active');
+    });
+}
