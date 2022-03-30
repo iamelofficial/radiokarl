@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="iconsfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconsfont.css">
 
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,7 +25,29 @@
         <div class="header__main__logo">
             <img src="images/logo.jpg" alt="">
         </div>
-        <div class="header__main__player">Тут, немного позже, будет плеер</div>
+        <div class="header__main__player">
+            <div class="radio-player">
+                <audio id="audio"></audio>
+                <div class="mp-player-button">
+                    <div id="btnPlay" class="mp-button active">
+                        <i class="icon-play"></i>
+                    </div>
+                    <div id="btnStop" class="mp-button">
+                        <i class="icon-stop2"></i>
+                    </div>
+                </div>
+                <div class="mp-song">
+                    <div class="mp-song__info">
+                        <div class="mp-live-title">Сейчас в эфире</div>
+                        <div class="mp-song__info_group">
+                            <div class="mp-song__info_artist">Радио КАРЛ</div>
+                            <div class="mp-song__info_sep">–</div>
+                            <div class="mp-song__info_track-name">Федеральный эфир</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header__main__contacts">
             <div class="header__main__contacts__phone">
                 WhatsApp
@@ -214,10 +236,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
